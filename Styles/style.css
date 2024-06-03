@@ -1,0 +1,1657 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+ * {
+     padding: 0;
+     margin: 0;
+     scroll-behavior: smooth;
+     scroll-padding-top: 167px;
+ }
+
+ body[data-aos-duration="400"] [data-aos] {
+     transition-duration: 1.1s;
+     z-index: 10;
+ }
+
+ .container-navbar {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     background-color: #5171d9;
+     height: 120px;
+     position: fixed;
+     width: 100%;
+ }
+
+
+
+ .navbar {
+     display: flex;
+     justify-content: flex-end;
+ }
+
+ .button-navbar{
+
+    background: none;
+    border: none;
+
+ }
+
+ .toogle-button {
+     display: none;
+ }
+
+ .lista-items-navbar {
+     align-items: center;
+     justify-content: center;
+ }
+
+ .item-navbar {
+     display: inline-block;
+     margin: 0 35px;
+     list-style: none;
+     position: relative;
+ }
+
+ .item-navbar::before {
+     content: "";
+     background-color: white;
+     width: 0%;
+     height: 2px;
+     right: 50%;
+     position: absolute;
+     top: 20px;
+     transition: all 0.24s;
+ }
+
+ .item-navbar:hover::before {
+     content: "";
+     background-color: white;
+     width: 100%;
+     height: 2px;
+     right: 0;
+     position: absolute;
+     top: 20px;
+ }
+
+ .link-navbar {
+     text-decoration: none;
+     letter-spacing: 1px;
+     font-size: 16px;
+     filter: drop-shadow(0.4px 0.5px 1px black);
+     position: relative;
+     color: white;
+     font-family: auto;
+ }
+
+ .logo-titulo-container {
+     display: flex;
+     flex-direction: row;
+     width: 48%;
+     align-items: center;
+ }
+
+ .logo {
+     width: 65px;
+     height: 65px;
+     margin-right: 4.5%;
+     margin-left: 12%;
+ }
+
+ .link-logo {
+     width: 65px;
+     height: 65px;
+     margin-right: 3.7%;
+     margin-left: 1%;
+ }
+
+ .nombre-empresa {
+     font-size: 26px;
+     font-family: 'Poppins';
+     color: white;
+     -webkit-text-stroke: 0.3px;
+     -webkit-text-stroke-color: black;
+     filter: drop-shadow(0.4px 0.5px 1px black);
+     font-style: italic;
+ }
+
+ .div-titulo-info {
+     display: flex;
+     text-align: center;
+     letter-spacing: 4px;
+     padding: 13.3% 9% 1% 14%;
+     font-size: 36px;
+     font-family: 'Poppins';
+     flex-direction: row;
+     justify-content: center;
+     align-items: flex-start;
+ }
+
+ .titulo-info {
+     color: #5171d9;
+     font-style: italic;
+     margin-top: 5%;
+     margin-right: 1%;
+     filter: drop-shadow(0.5px 0.5px 0px black);
+ }
+
+ .descripcion-info,
+ .descripcion-trabajos {
+     font-size: 18px;
+     color: #6a6a6a;
+     -webkit-text-stroke: 1px;
+     -webkit-text-stroke-color: #646464;
+     margin-top: 5%;
+     padding: 2% 12% 0% 11%;
+     font-family: 'Poppins';
+     font-style: italic;
+ }
+
+ .padre-containers-info {
+     display: grid;
+     margin-top: 0%;
+     padding: 7% 12% 0 12%;
+     height: 500px;
+     grid-template-columns: repeat(3, 1fr);
+     justify-content: center;
+     align-items: center;
+     justify-items: center;
+     align-content: space-between;
+ }
+
+ .container-informacion {
+     text-align: center;
+     border: 1px solid white;
+     margin-bottom: 7%;
+     border-radius: 4px;
+     background-color: white;
+     padding: 8% 8% 1% 8%;
+     box-shadow: 0px 0px 3px 1px;
+     width: 47%;
+     height: 95%;
+ }
+
+ .div-img-info {
+     margin: 0px 0% 11% 0%;
+ }
+
+ .img-container {
+     width: 100px;
+     height: 100px;
+ }
+
+ .container-texto-info {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .titulo-card-info {
+     font-size: 28px;
+     font-family: 'Poppins', sans-serif;
+     margin-bottom: 10%;
+     padding: 1% 17% 1%;
+     border-bottom: solid 1px #c6c8ca;
+     color: #5171d9;
+     filter: drop-shadow(0px 0px 0.1px black);
+ }
+
+ .descripcion-card-info {
+     text-align: center;
+     color: #6a6a6a;
+     font-family: 'Poppins';
+     font-size: 14px;
+ }
+
+
+ .div-titulo-servicios,
+ .div-titulo-trabajos {
+     display: flex;
+     text-align: center;
+     letter-spacing: 4px;
+     padding: 1% 9% 0% 13%;
+     font-size: 36px;
+     font-family: 'Poppins';
+     flex-direction: row;
+     justify-content: center;
+     align-items: flex-start;
+ }
+
+ .div-titulo-trabajos {
+     padding: 5% 9% 0% 13%;
+ }
+
+ .titulo-servicios,
+ .titulo-trabajos {
+     font-size: 54px;
+     color: #5171d9;
+     font-style: italic;
+     margin-top: 7%;
+     margin-right: 1%;
+     filter: drop-shadow(0.5px 0.5px 0px black);
+ }
+
+ .container {
+     display: flex;
+     border: 1px solid white;
+     margin-bottom: 7%;
+     border-radius: 4px;
+     background-color: white;
+     box-shadow: 0px 0px 3px 1px;
+     padding: 47px 45px 47px 0px;
+     width: 88%;
+     align-items: center;
+ }
+
+ .div-img {
+     margin: 0 8% 0 7%;
+ }
+
+ .padre-containers {
+     display: grid;
+     margin-top: 0%;
+     padding: 7% 12% 0 12%;
+     grid-template-columns: repeat(2, 1fr);
+     justify-content: center;
+     align-items: center;
+     justify-items: center;
+     align-content: space-between;
+ }
+
+ .titulo-card {
+     font-size: 28px;
+     font-family: 'Poppins', sans-serif;
+     margin-bottom: 3%;
+     color: #5171d9;
+     filter: drop-shadow(0px 0px 0.1px black);
+ }
+
+ .descripcion-card {
+     color: #6a6a6a;
+     font-size: 14px;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ .seccion-trabajos {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     justify-items: center;
+     padding: 6% 4%;
+ }
+
+ .carrousel {
+     width: 70%;
+     max-width: 120em;
+     box-shadow: 0px 0px 11px 1px;
+     padding: 2em;
+     color: var(--negro);
+     transition: all 0.4s ease;
+     border-radius: 1em;
+     background-color: var(--blanco);
+     overflow: hidden;
+ }
+
+ .carrousel .grande1,
+ .grande2,
+ .grande3,
+ .grande4,
+ .grande5,
+ .grande6,
+ .grande7,
+ .grande8,
+ .grande9,
+ .grande10 {
+     width: 700%;
+     position: relative;
+     z-index: -1;
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: space-between;
+     align-items: center;
+     color: var(--negro);
+     transition: all 0.4s ease;
+     border-radius: 1em;
+     background-color: var(--blanco);
+     padding: 2em;
+     transition: all 0.5s ease;
+     transform: translateX(0%);
+ }
+
+ .carrousel .titulo-obra {
+     text-align: center;
+     font-size: 30px;
+     font-family: 'Poppins', sans-serif;
+     margin-bottom: 3%;
+     padding: 0% 0% 3% 0%;
+     border-bottom: solid 1px #c6c8ca;
+     color: #5171d9;
+     filter: drop-shadow(0px 0px 0.1px black);
+ }
+
+ .carrousel .descripcion-obra {
+     font-size: 14px;
+     text-align: center;
+     color: #6a6a6a;
+     font-family: 'Poppins';
+     font-size: 14px;
+ }
+
+ .carrousel .img {
+    width: calc(111% / 7 - 7.8em);
+    /* width: calc(100% / 7 - 7em);*/
+     min-height: 10vh;
+     color: var(--negro);
+     transition: all 0.4s ease;
+     border-radius: 1em;
+     background-color: var(--blanco);
+     filter: drop-shadow(1px 1px 5px black);
+ }
+
+ .carrousel .puntos {
+     width: 100%;
+     margin: 0em -13px 0px;
+     padding: 0.4em;
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .carrousel .punto1,
+ .punto2,
+ .punto3,
+ .punto4,
+ .punto5,
+ .punto6,
+ .punto7,
+ .punto8,
+ .punto9,
+ .punto10 {
+     width: 1em;
+     cursor: pointer;
+     height: 1em;
+     margin: 1em 1em 0;
+     color: var(--negro);
+     transition: all 0.4s ease;
+     border-radius: 1em;
+     box-shadow: 0px 0px 8px 0px;
+     list-style: none;
+ }
+
+ .carrousel .punto1.activo,
+ .punto2.activo,
+ .punto3.activo,
+ .punto4.activo,
+ .punto5.activo,
+ .punto6.activo,
+ .punto7.activo,
+ .punto8.activo,
+ .punto9.activo,
+ .punto10.activo {
+     cursor: pointer;
+     background-color: #5171d9;
+ }
+
+ .footer {
+     background-color: black;
+     padding: 45px 80px 25px 80px;
+     margin-top: 5%;
+ }
+
+ .ubicaciones,
+ .localizaciones {
+
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+     flex-direction: column;
+
+ }
+
+ .contenido-footer {
+
+     text-align: center;
+     color: white;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+
+ }
+
+ .titulo-footer1,
+ .titulo-footer2,
+ .titulo-footer3 {
+     font-size: 21px;
+     margin-bottom: 3%;
+     letter-spacing: 0.8px;
+     font-family: 'Poppins', sans-serif;
+     position: relative;
+     -webkit-text-stroke: 0.5px;
+     -webkit-text-stroke-color: white;
+     filter: drop-shadow(0px 0px 0.1px white);
+     font-style: italic;
+ }
+
+ .div-wa,
+ .div-ig,
+ .div-mail,
+ .div-loc,
+ .div-derech,
+ .div-grax,
+ .div-sanma,
+ .div-nqn,
+ .div-bsas {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .div-wa {
+     margin-top: 3%;
+     margin-right: 32px;
+ }
+
+ .div-ig {
+     margin-right: 2px;
+ }
+
+ .div-mail {
+     margin-left: 130px;
+     margin-bottom: 18.8px;
+ }
+
+ .div-loc {
+     margin-top: 3%;
+ }
+
+ .div-grax {
+     margin-right: 4px;
+     margin-bottom: 7px;
+ }
+
+ .div-sanma {
+     margin-top: 8%;
+ }
+
+ .div-nqn {
+     margin-right: 65px;
+ }
+
+ .div-bsas {
+     margin-right: 88px;
+     margin-bottom: 2.7px;
+ }
+
+ .fa-whatsapp {
+     position: sticky;
+     left: 93%;
+     top: 2px;
+     z-index: 9;
+     width: 65px;
+     height: 65px;
+     line-height: 64px !important;
+     font-size: 49px;
+     bottom: 25px;
+     right: 25px;
+     background: #fff;
+     color: #25d366;
+     border-radius: 50px;
+     text-align: center;
+     box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.8);
+     transition: all 0.5s ease;
+ }
+
+
+ .fa-whatsapp:hover {
+     background: #25d366;
+     color: #fff;
+ }
+
+ .svg-1 {
+     width: 502px;
+     height: 410px;
+ }
+
+ .svg-2 {
+     width: 485px;
+     height: 400px;
+ }
+
+ .svg-3 {
+     width: 485px;
+     height: 385px;
+ }
+
+ @media (max-width: 1270px) {
+
+     .div-titulo-info {
+         padding: 19.3% 0 1% 5%;
+     }
+
+     .link-logo {
+         margin-left: 5%;
+     }
+
+     .logo {
+         margin-left: 4%;
+     }
+
+     .item-navbar {
+         margin: 0 20px;
+     }
+
+     .link-navbar {
+         font-size: 15px;
+     }
+
+     .titulo-info {
+         font-size: 38px;
+     }
+
+     .div-titulo-servicios {
+         padding: 1% 3% 0 5%;
+     }
+
+     .div-titulo-trabajos {
+         padding: 5% 5% 0 12%;
+     }
+
+     .titulo-servicios,
+     .titulo-trabajos {
+         font-size: 38px;
+     }
+
+     .descripcion-info .descripcion-trabajos {
+         font-size: 16px;
+     }
+
+     .padre-containers-info {
+         padding: 7% 9% 0;
+     }
+
+     .container-informacion {
+         padding: 8% 15% 1%;
+     }
+
+     .titulo-card-info {
+         font-size: 28px;
+         padding: 1% 17% 1%;
+     }
+
+     .descripcion-card-info {
+         font-size: 13px;
+     }
+
+     .img-container {
+         height: 90px;
+         width: 90px;
+     }
+
+     .padre-containers {
+         padding: 7% 5% 0px;
+     }
+
+     .container {
+         padding: 47px 25px 47px 0;
+         width: 88%
+     }
+
+     .titulo-card {
+         font-size: 26px;
+
+     }
+
+      .carrousel .img {
+        width: calc(20.2857% - 13.4em);
+    }
+
+     .carrousel {
+         width: 65%;
+     }
+
+     .carrousel .titulo-obra {
+         font-size: 24px;
+
+     }
+
+     .footer {
+         padding: 45px 50px 25px 19px;
+     }
+
+     .whatsapp {
+         width: 76px;
+         height: 76px;
+         line-height: 74px !important;
+         font-size: 55px;
+     }
+
+     .svg-1 {
+         width: 530px;
+         height: 340px;
+     }
+
+     .svg-2 {
+         width: 488px;
+         height: 350px;
+     }
+
+     .svg-3 {
+         width: 507px;
+         height: 304px;
+     }
+
+     .fa-whatsapp {
+         left: 92%;
+     }
+ }
+
+ @media (max-width: 1172px) {
+    
+    .carrousel .img {
+        width: calc(31.8571% - 30.19em);
+        padding-right: 6px;
+    }
+
+     .footer {
+         padding: 45px 50px 25px 2px;
+     }
+
+     .titulo-footer1,
+     .titulo-footer2,
+     .titulo-footer3 {
+         font-size: 19px;
+     }
+
+     .span-wa,
+     .span-ig,
+     .span-mail,
+     .span-loc,
+     .span-derech,
+     .span-grax,
+     .span-sanma,
+     .span-nqn,
+     .span-bsas {
+         font-size: 14px;
+     }
+
+     .div-mail {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+         margin-left: 113px;
+         margin-bottom: 18.8px;
+     }
+
+     .div-nqn {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+         margin-right: 55px;
+     }
+
+     .div-bsas {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+         margin-right: 75px;
+         margin-bottom: 2.7px;
+     }
+ }
+
+ @media (max-width: 1050px) {
+
+     .logo {
+         width: 62px;
+         height: 62px;
+     }
+
+     .nombre-empresa {
+         font-size: 24px;
+     }
+
+     .link-navbar {
+         font-size: 14px;
+     }
+
+     .titulo-info {
+         font-size: 34px;
+     }
+
+     .descripcion-info,
+     .descripcion-trabajos {
+         font-size: 15px;
+     }
+
+     .titulo-servicios,
+     .titulo-trabajos {
+         font-size: 35px;
+     }
+
+     .titulo-card {
+         font-size: 22px;
+     }
+
+     .container-informacion {
+         padding: 8% 20% 1%;
+     }
+
+     .descripcion-card {
+         font-size: 13px;
+     }
+
+     .img-container {
+         height: 83px;
+         width: 83px;
+     }
+
+     .carrousel {
+         width: 70%;
+     }
+     
+     .carrousel .img {
+        width: calc(32.8571% - 30.6em);
+        padding-right: 9px;
+    }
+
+     .carrousel .punto1,
+     .punto2,
+     .punto3,
+     .punto4,
+     .punto5,
+     .punto6,
+     .punto7,
+     .punto8,
+     .punto9,
+     .punto10 {
+         width: 0.8em;
+         height: 0.8em;
+         margin: 1.4em 1em 0px;
+     }
+
+     .fa-whatsapp {
+         left: 90%;
+     }
+
+ }
+
+ /* Media Movile */
+
+ @media (max-width: 960px) {
+
+
+     .link-navbar {
+         font-size: 26px;
+     }
+
+     .lista-items-navbar-disable {
+         display: flex;
+         height: calc(100vh - 120px);
+         gap: 10%;
+         width: 100%;
+         left: 100%;
+         top: 65px;
+         justify-content: center;
+         text-align: center;
+         position: fixed;
+         margin-top: 55px;
+         background-color: #2e2e2e;
+         flex-direction: column;
+         transition: left 0.5s;
+         overflow-y: auto;
+     }
+
+     .lista-items-navbar-active {
+         left: 0;
+     }
+
+     .toogle-button {
+         display: block;
+         background: none;
+         border: none;
+         cursor: pointer;
+     }
+
+     .svg-toogle {
+         width: 43px;
+         color: white;
+         height: 43px;
+     }
+
+     .div-titulo-info {
+         align-items: center;
+         flex-direction: column;
+         padding: 19.3% 0 1% 0;
+     }
+
+     .titulo-info {
+         font-size: 38px;
+     }
+
+     .descripcion-info {
+         font-size: 16px;
+     }
+
+     .svg-1 {
+         width: 600px;
+         height: 400px;
+         margin-top: 6%;
+     }
+
+     .padre-containers-info {
+         padding: 7% 9% 0;
+         grid-template-columns: repeat(1, 1fr);
+         gap: 2%;
+         margin-top: 5%;
+         height: 100%;
+     }
+
+     .container-informacion {
+         padding: 5% 22% 2%;
+         width: 26%;
+         height: 86%;
+     }
+
+     .img-container {
+         height: 90px;
+         width: 90px;
+     }
+
+     .titulo-card-info {
+         font-size: 32px;
+     }
+
+     .descripcion-card-info {
+         font-size: 16px;
+     }
+
+     .div-titulo-servicios {
+         padding-top: 10%;
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .titulo-servicios,
+     .titulo-trabajos {
+         font-size: 35px;
+     }
+
+     .descripcion-info,
+     .descripcion-trabajos {
+         font-size: 16px;
+     }
+
+     .svg-2 {
+         width: 488px;
+         height: 350px;
+         margin-top: 5%;
+     }
+
+     .padre-containers {
+         padding: 7% 5% 0;
+         grid-template-columns: repeat(1, 1fr);
+     }
+
+     .container {
+         padding: 38px 3px 38px 0;
+         width: 88%;
+     }
+
+
+     .titulo-card {
+         font-size: 24px;
+     }
+
+     .descripcion-card {
+         font-size: 17px;
+     }
+
+     .div-titulo-trabajos {
+         padding: 5% 4% 0 0;
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .descripcion-trabajos {
+         font-size: 14px;
+     }
+
+     .svg-3 {
+         width: 507px;
+         height: 304px;
+     }
+
+     .seccion-trabajos {
+         grid-template-columns: repeat(1, 1fr);
+     }
+
+     .carrousel {
+         width: 62%;
+     }
+
+     .carrousel .titulo-obra {
+         font-size: 34px;
+     }
+
+     .carrousel .descripcion-obra {
+         font-size: 17px;
+     }
+
+     .carrousel .img {
+        width: calc(26.8571% - 33.2em);
+        padding-right: 9px;
+    }
+
+     .carrousel .punto1,
+     .punto2,
+     .punto3,
+     .punto4,
+     .punto5,
+     .punto6,
+     .punto7,
+     .punto8,
+     .punto9,
+     .punto10 {
+         width: 1.3em;
+         height: 1.3em;
+         margin: 1.4em 1em 0px
+     }
+
+     .fa-whatsapp {
+         width: 60px;
+         height: 60px;
+         line-height: 60px !important;
+         font-size: 44px;
+     }
+
+     .span-loc {
+         padding: 2%;
+         margin-top: 3%;
+     }
+
+     .div-bsas {
+         margin-bottom: 19.7px
+     }
+
+     .div-sanma {
+         margin-top: 4%;
+     }
+
+     .item-navbar:hover::before {
+         content: none;
+
+     }
+
+     .link-navbar:hover {
+         color: #5171d9;
+         transition: all 0.3s;
+         filter: none;
+     }
+
+ }
+
+ @media (max-width: 890px) {
+
+     .carrousel .punto1,
+     .punto2,
+     .punto3,
+     .punto4,
+     .punto5,
+     .punto6,
+     .punto7,
+     .punto8,
+     .punto9,
+     .punto10 {
+         width: 1em;
+         height: 1em;
+         margin: 1.4em 1em 0px;
+     }
+
+     .footer {
+
+         padding: 45px 0 24px 0;
+
+     }
+
+     .titulo-footer1,
+     .titulo-footer2,
+     .titulo-footer3 {
+
+         font-size: 19px;
+
+     }
+
+     .span-wa,
+     .span-ig,
+     .span-mail,
+     .span-loc,
+     .span-derech,
+     .span-grax,
+     .span-sanma,
+     .span-nqn,
+     .span-bsas {
+
+         font-size: 12px;
+
+     }
+
+     .div-wa {
+         margin-top: 2%;
+         margin-right: 91px;
+     }
+
+     .div-ig {
+         margin-right: 70px;
+     }
+
+     .div-mail {
+
+         margin-left: 34px;
+         margin-bottom: 17.8px;
+
+     }
+
+     .div-sanma {
+         margin-top: 6%;
+         margin-left: 11%;
+     }
+
+     .carrousel .img {
+         width: calc(127% / 7 - 12.5em);
+     }
+
+     .fa-whatsapp {
+         left: 88%;
+     }
+
+ }
+
+ @media (max-width: 680px) {
+
+     .container-informacion {
+         padding: 5% 22% 4%;
+     }
+
+     .contenido-footer {
+
+         grid-template-columns: repeat(2, 1fr);
+
+     }
+
+     .carrousel .img {
+         width: calc(150% / 7 - 15.3em);
+     }
+
+     .carrousel .descripcion-obra {
+         font-size: 17px;
+     }
+
+     .carrousel .titulo-obra {
+         font-size: 34px;
+     }
+
+     .ubicaciones {
+
+         display: none;
+
+     }
+
+     .titulo-footer1,
+     .titulo-footer3 {
+
+         margin-left: 3%;
+
+     }
+
+     .carrousel .punto1,
+     .punto2,
+     .punto3,
+     .punto4,
+     .punto5,
+     .punto6,
+     .punto7,
+     .punto8,
+     .punto9,
+     .punto10 {
+         width: 0.9em;
+         height: 0.9em;
+     }
+
+
+
+     .div-sanma {
+         margin-top: 6%;
+         margin-left: 2%;
+     }
+
+     .fa-whatsapp {
+         left: 86%;
+     }
+
+ }
+
+ @media (max-width: 617px) {
+
+     .logo-titulo-container {
+         width: 74%;
+     }
+
+     .nombre-empresa {
+         font-size: 20px;
+     }
+
+     .titulo-info {
+         font-size: 32px;
+         margin-top: 15%;
+     }
+
+     .descripcion-info,
+     .descripcion-trabajos {
+         font-size: 15px;
+     }
+
+     .img-container {
+         height: 80px;
+         width: 80px;
+     }
+
+     .titulo-card-info {
+         font-size: 30px;
+     }
+
+     .descripcion-card-info {
+         font-size: 15px;
+     }
+
+     .container-informacion {
+         padding: 5% 22% 6%;
+     }
+
+     .titulo-servicios,
+     .titulo-trabajos {
+         font-size: 33px;
+     }
+
+     .container {
+         padding: 38px 15px 38px 0;
+         width: 88%;
+     }
+
+     .titulo-card {
+         font-size: 23px;
+     }
+
+     .descripcion-card {
+         font-size: 15px;
+     }
+
+     .carrousel {
+         width: 75%;
+     }
+
+     .carrousel .img {
+         width: calc(150% / 7 - 16.6em);
+     }
+
+     .svg-1 {
+         width: 410px;
+     }
+
+     .svg-2 {
+         width: 410px;
+     }
+
+     .svg-3 {
+         width: 410px;
+     }
+
+ }
+
+ @media (max-width: 565px) {
+
+     .carrousel {
+         width: 79%;
+     }
+
+     .carrousel .img {
+         width: calc(27% - 25.7rem);
+     }
+
+     .fa-whatsapp {
+         position: relative;
+         left: 84%;
+     }
+
+ }
+
+ @media (max-width: 510px) {
+
+     .img-container {
+         height: 72px;
+         width: 75px;
+     }
+
+     .titulo-card {
+         font-size: 20px;
+     }
+
+     .descripcion-card {
+         font-size: 14px;
+     }
+
+     .descripcion-info,
+     .descripcion-trabajos {
+         font-size: 13px;
+     }
+
+     .titulo-servicios,
+     .titulo-trabajos {
+         font-size: 31px;
+     }
+
+     .descripcion-card-info {
+         font-size: 14px;
+     }
+
+     .titulo-card-info {
+         font-size: 28px;
+     }
+
+     .fa-whatsapp{
+        left: 80%;
+     }
+
+     .container-informacion {
+         padding: 10% 25% 8%;
+     }
+
+     .titulo-info {
+         font-size: 31px;
+         margin-top: 20%;
+     }
+
+     .logo {
+         width: 56px;
+         height: 56px;
+     }
+
+     .nombre-empresa {
+         font-size: 19px;
+     }
+
+     .svg-toogle {
+         width: 39px;
+         height: 39px;
+     }
+
+     .carrousel {
+         width: 80%;
+     }
+
+     .carrousel .img {
+         width: calc(35.4286% - 36.6em);
+     }
+
+     .carrousel .titulo-obra {
+         font-size: 31px;
+     }
+
+     .carrousel .descripcion-obra {
+         font-size: 15px;
+     }
+
+
+ }
+
+ @media (max-width: 466px) {
+
+     .container {
+         padding: 45px 21px 33px 0;
+         width: 95%;
+     }
+
+     .img-container {
+         height: 67px;
+         width: 67px;
+     }
+
+     .titulo-card {
+         font-size: 19px;
+     }
+
+     .descripcion-card {
+         font-size: 13px;
+     }
+
+     .carrousel {
+         width: 72%;
+     }
+
+     .carrousel .img {
+         width: calc(44.4286% - 44.8em);
+     }
+
+     .carrousel .punto1,
+     .punto2,
+     .punto3,
+     .punto4,
+     .punto5,
+     .punto6,
+     .punto7,
+     .punto8,
+     .punto9,
+     .punto10 {
+         width: 1em;
+         height: 0.8em;
+     }
+
+     .titulo-footer1,
+     .titulo-footer3 {
+         margin-left: 0%;
+         margin-right: 13%;
+     }
+
+     .div-wa {
+         margin-right: 101px;
+     }
+
+     .div-ig {
+         margin-right: 77px;
+     }
+
+     .div-mail {
+         margin-left: 26px;
+     }
+
+     .div-sanma {
+         margin-left: 4%;
+     }
+
+     .div-nqn {
+         margin-right: 29px;
+     }
+
+     .div-bsas {
+         margin-left: 21px;
+     }
+ }
+
+ @media (max-width: 451px) {
+
+     .carrousel {
+         width: 79%;
+     }
+
+     .carrousel .img {
+         width: calc(44.4286% - 48.1em);
+     }
+ }
+
+ @media (max-width: 439px) {
+
+     .carrousel .img {
+         width: calc(50.4286% - 53.6em);
+         padding-right: 9px;
+     }
+
+     .div-nqn {
+         margin-right: 22px;
+     }
+ }
+
+
+ @media (max-width: 425px) {
+
+     .carrousel {
+         width: 80%;
+     }
+
+     .carrousel .img {
+         width: calc(53.4286% - 57.2em);
+         padding-right: 10px;
+     }
+
+
+     .div-nqn {
+         margin-right: 13px;
+     }
+
+     .div-sanma {
+         margin-left: 9%;
+     }
+
+ }
+
+
+ @media (max-width: 419px) {
+
+     .carrousel {
+         width: 80.9%;
+     }
+
+     /*  .carrousel {
+         width: 80.9%;
+     }*/
+
+     .carrousel .img {
+         width: calc(55.4286% - 59.7em);
+         padding-right: 10px;
+     }
+
+     .svg-1 {
+         width: 360px;
+     }
+
+     .svg-2 {
+         width: 360px;
+     }
+
+     .svg-3 {
+         width: 340px;
+     }
+
+     .fa-whatsapp {
+         left: 82%;
+     }
+
+     .localizaciones {
+         margin-right: 9%;
+     }
+
+     .div-nqn {
+         margin-right: 13px;
+     }
+
+     .div-sanma {
+         margin-left: 3%;
+     }
+
+     .titulo-footer1,
+     .titulo-footer3 {
+         margin-left: -14%;
+         margin-right: 4%;
+     }
+
+     .carrousel .descripcion-obra {
+        font-size: 13px;
+    }
+
+    .carrousel .titulo-obra {
+        font-size: 26px;
+    }
+ }
+
+ @media (max-width: 441px) and (min-width: 430px) {
+
+     .lista-items-navbar-disable {
+         height: calc(100vh - 107px);
+     }
+ }
+
+ @media (max-width: 429px) and (min-width: 420px) {
+
+     .lista-items-navbar-disable {
+         height: calc(100vh - 100px);
+     }
+ }
+
+ @media (max-width: 400px) and (min-width: 370px) {
+
+    .lista-items-navbar-disable {
+        height: calc(100vh - 50px);
+    }
+
+ }
+
+ @media (max-width: 369px) and (min-width: 350px) {
+
+
+    .lista-items-navbar-disable {
+        height: calc(100vh - 20px);
+    }
+
+ }
+ 
+
+
+ @media (max-width: 440px) and (min-width: 437px) {
+
+     .footer {
+
+         width: 100.4%;
+
+     }
+
+ }
+
+ @media (max-width: 437px) and (min-width: 432px) {
+
+     .footer {
+         width: 101%;
+     }
+
+ }
+
+ @media (max-width: 432px) and (min-width: 428px) {
+
+     .footer {
+         width: 101.3%;
+     }
+
+ }
+
+ @media (max-width: 428px) and (min-width: 420px) {
+
+     .footer {
+         width: 102.5%;
+     }
+
+
+ }
+
+ @media (max-width: 412px) and (min-width: 400px) {
+    .carrousel .img {
+        width: calc(61.4286% - 67.8em);
+        padding-right: 13px;
+    }
+
+    .carrousel .grande1, .grande2, .grande3, .grande4, .grande5, .grande6, .grande7, .grande8, .grande9, .grande10 {
+        width: 711%;
+    }
+
+ }
+
+ @media (max-width: 399px) and (min-width: 390px) {
+
+.footer{
+    width: 102%;
+}
+
+ }
+
+ @media (max-width: 389px) and (min-width: 380px) {
+
+    .footer{
+
+        width: 104.4%
+
+    }
+
+ }
+
+ @media (max-width: 379px) and (min-width: 370px) {
+
+    .footer{
+
+        width: 108%
+        
+    }
+
+ }
+
+ @media (max-width: 369px) and (min-width: 360px) {
+
+    .footer{
+
+        width: 111.1%
+        
+    }
+
+ }
+
+
+ @media (max-width: 399px) and (min-width: 375px) {
+
+ .carrousel .img {
+    width: calc(58.4286% - 63.9em);
+    padding-right: 41px;
+}
+
+.carrousel {
+    width: 75.9%;
+}
+
+.carrousel .grande1, .grande2, .grande3, .grande4, .grande5, .grande6, .grande7, .grande8, .grande9, .grande10 {
+    width: 783%;   
+}
+
+.carrousel .punto1, .punto2, .punto3, .punto4, .punto5, .punto6, .punto7, .punto8, .punto9, .punto10 {
+        height: 0.6em;
+    }
+}
+
+@media (max-width: 374px) and (min-width: 367px) {
+    .carrousel .punto1, .punto2, .punto3, .punto4, .punto5, .punto6, .punto7, .punto8, .punto9, .punto10 {
+        height: 0.6em;
+    }
+
+    .carrousel .img {
+        width: calc(62.4286% - 66.45em);
+        padding-right: 14px;
+    }
+
+    .carrousel .grande1, .grande2, .grande3, .grande4, .grande5, .grande6, .grande7, .grande8, .grande9, .grande10 {
+        width: 760%;
+    }
+}
+
+@media (max-width: 366px) and (min-width: 300px) {
+
+    .carrousel .punto1, .punto2, .punto3, .punto4, .punto5, .punto6, .punto7, .punto8, .punto9, .punto10 {
+        height: 0.5em;
+    }
+
+    .carrousel .img {
+        width: calc(64.4286% - 68.45em);
+        padding-right: 19px;
+    }
+
+
+    .carrousel .grande1, .grande2, .grande3, .grande4, .grande5, .grande6, .grande7, .grande8, .grande9, .grande10 {
+        width: 760%;
+    }
+
+}
+ /*Responsive funcionando hasta los 400 Px */
